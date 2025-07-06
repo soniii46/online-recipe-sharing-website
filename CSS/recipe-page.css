@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and Base */
+body {
+  font-family: 'Montserrat', 'Ubuntu', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Recipe Top Label */
+.recipe-top {
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+}
+
+.recipe-lb {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Recipe Container */
+.recipes {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.recipe-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.column {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+/* Recipe Box */
+.box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box-text {
+  padding: 15px;
+}
+
+.box-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.box-md {
+  display: block;
+  color: #777;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.r-name {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.r-name:hover {
+  text-decoration: underline;
+}
+
+.p-name {
+  color: black;
+  text-decoration: none;
+  font-size:18px;
+}
+
+#time {
+  font-size:18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.margin-bt {
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .column {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+
+  .recipe-top {
+      padding: 25px 10px;
+  }
+
+  .recipe-lb {
+      font-size: 2rem;
+  }
+}

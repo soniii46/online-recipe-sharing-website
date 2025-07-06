@@ -1,0 +1,85 @@
+
+
+/* Small Container */
+.small-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Product Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.col-4 {
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.col-4:hover {
+    transform: scale(1.05);
+}
+
+.col-4 img {
+    width: 100%;
+    height: auto;  /* Let the image adjust to its natural aspect ratio */
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.col-4 img:hover {
+    opacity: 0.8;
+}
+
+.col-4 h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.col-4 p {
+    font-size: 16px;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .col-4 {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-4 {
+        width: 100%;
+    }
+}

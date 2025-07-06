@@ -1,0 +1,72 @@
+body {
+    font-family: poppins;
+    background-color: #C9E9D2;
+}
+/* Topic/Heading Styling */
+.topic {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Login Form Container */
+.form-container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Redirect / Info Text */
+.form-login {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.form-login a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}

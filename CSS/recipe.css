@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #efe3e2;
+  position: relative;
+  display: flex;
+}
+#menu{
+  background: #003f5c;
+  width: 300px;
+  height: 800px;
+  min-height: 100vh;
+}
+#menu-btn{
+  display: none;
+}
+#menu .logo{
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 30px 0 0 30px;
+}
+#menu .logo img{
+  width: 60px;
+  margin-right: 15px;
+  color: white;
+}
+#menu .items{
+  margin-top: 40px;
+}
+#menu .items li{
+  list-style: none;
+  padding: 15px 0;
+  transition: 0.3s ease;
+}
+#menu .items li i{
+  color: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 10px 0 25px;
+}
+#menu .items li a{
+  text-decoration: none;
+  color:white;
+  font-weight: 300px;
+  transition: 0.3s ease;
+}
+#menu .items li:hover{
+  background-color:#58508d;
+  cursor: pointer;
+}
+#menu .items li:nth-child(1){
+  border-left: 4px solid white;
+}
+
+
+
+/* container */
+#interface{
+  width: calc(100%-300px);
+}
+.i-name{
+  color: #444a53;
+  padding: 30px 30px 0 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.value{
+  padding: 30px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.value .value-box{
+  background: white;
+  width: 235px;
+  padding: 16px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 20px;
+}
+.value .value-box i{
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-color: plum;
+  margin-right: 15px;
+}
+.value .value-box h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+.value .value-box span{
+  font-size:15px ;
+  color: gray;
+}
+.value .value-box:nth-child(1) i{
+  background-color: plum;
+}
+.value .value-box:nth-child(2) i{
+  background-color: pink;
+}
+.value .value-box:nth-child(1) i{
+  background-color: peachpuff;
+}
+
+/* viewproducts */
+.display_product {
+  margin-left: 5px;
+  margin-top: 30px;
+}
+.display_product .title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.display_product table{
+  width: calc(100%-300px);
+  text-align: center;
+  border: solid 1px;
+}
+.display_product table thead th{
+  padding: 10px;
+  font-size: 13px;
+  background-color: rgb(208, 143, 154);
+  color: white;
+}
+.display_product table tr td{
+  padding: 10px;
+  font-size: 13px;
+  color: black;
+  border: 1px solid black;
+}
+.display_product table tr td a{
+  text-decoration: none;
+  font-size: 13px;
+}
+.display_product table tr td a i{
+  font-size: 12px;
+}
+
+
+@media (max-width: 769px){
+  #menu {
+      width: 270px;
+      position: fixed;
+      left: -270px;
+      transition: 0.3s ease;
+  }
+  #menu.active{
+      left: 0px;
+  }
+  #menu-btn{
+      display: initial ;
+  }
+  #interface{
+      width: 100%;
+      margin-left: 0px;
+      display: inline-block;
+      transition: 0.3s ease;
+  }
+  #menu.active~ #interface{
+      width: calc(100%-270px);
+      margin-left:270px ;
+  }
+  .value{
+      padding: 30px 30px 0 30px;
+      justify-content: flex-start;
+  }
+  .value .value-box{
+      padding: 16px 20px;
+      margin: 10px 20px 10px 0;
+  }
+}
+
+
+
+.form-container {
+  padding: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.form-container h3{
+  font-size: 33px;
+  margin-bottom: 2rem;
+  color:var(--black);
+  top:0px;
+}
+
+input {
+  /* margin-right: 50rem; */
+  padding: 5px 5px;
+  /* float: right; */
+  outline: none;
+  border-radius: 0.2rem;
+  font-size: 16px;
+}
+
+textarea {
+  margin-right: 40rem;
+  padding: 5px 5px;
+  /* float: right; */
+  outline: none;
+  border-radius: 0.2rem;
+  font-size: 18px;
+  border: 2px solid black;
+}
+
+
+.cook_time_lb {
+  top: 30rem;
+  position: absolute;
+}
+
+.cook_time_text {
+  left: 410px;
+  top: 29.5rem;
+  position: absolute;
+}
+
+.ingre_lb {
+  top: 35rem;
+  position: absolute;
+}
+
+.ingre_text {
+  left: 410px;
+  top: 33.5rem;
+  position: absolute;
+}
+
+.diff_lb {
+  right: 33rem;
+  bottom: 40.5rem;
+  position: absolute;
+}
+
+.diff {
+  right: 27.5rem;
+  bottom: 40.3rem;
+  position: absolute;
+  font-size: 14px;
+  display: inline;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+}
+
+.serve_lb {
+  right: 33.7rem;
+  bottom: 38rem;
+  position: absolute;
+}
+
+.serves_text {
+  right: 20.2rem;
+  bottom: 37.8rem;
+  position: absolute;
+  text-align: center;
+}
+
+.price_lb {
+  right: 33.7rem;
+  bottom: 27rem;
+  position: absolute;
+}
+.price_text {
+  right: 20.2rem;
+  bottom: 26.8rem;
+  position: absolute;
+  text-align: center;
+}
+
+
+.create_lb {
+  right: 33.4rem;
+  bottom: 35rem;
+  position: absolute;
+}
+
+.create_text {
+  right: 19.8rem;
+  bottom: 35rem;
+  position: absolute;
+  border: none;
+}
+
+
+.upload_lb {
+  right: 30.8rem;
+  bottom: 30rem;
+  position: absolute;
+}
+
+.image-upload {
+  position: absolute;
+  cursor: pointer;
+  right: 17rem;
+  bottom: 29.5rem;
+}
+.method_lb {
+  position: absolute;
+  right: 33rem;
+  bottom: 20rem;
+}
+
+.method_text {
+  position: absolute;
+  left: 62.6rem;
+  top: 26rem;
+}
+.submit-btn {
+  width: 120px;
+  height: 40px;
+  float: left;
+  cursor: pointer;
+  font-family: "Ubuntu";
+  font-weight: 200;
+  border: 0;
+  outline: none;
+  color: white;
+  background-color: black;
+  border-radius: 0.25rem;
+  position: absolute;
+  bottom:2rem;
+  left: 60rem;
+}
+
+.submit-btn:hover {
+  background-color: #eba83a;
+}
+
+.btn{
+  width: 120px;
+  height: 40px;
+  float: left;
+  background-color: black;
+  border-radius: 0.25rem;
+  position: absolute;
+  bottom:2rem;
+  left: 70rem;
+}
+
+.btn a{
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Ubuntu";
+  font-size:15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.btn:hover{
+  background-color: #eba83a;
+}
+
+

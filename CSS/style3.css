@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+/* CSS for nav */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #30475e;
+    color: white;
+    padding: 20px;
+}
+header nav a{
+    color: white;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 19px;
+    padding: 30px;
+    text-decoration: none;
+}
+header nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+div.sign-in-up a button{
+    background-color: #75cfb8;
+    font-size: 16px;
+    padding: 4px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 20px;
+    color: black;
+}
+div.sign-in-up a button:hover{
+    background-color:white;
+    cursor: pointer;
+}
+
+.user{
+    color: #30475e;
+    background-color: #75cfb8;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.user a{
+    color: #30475e;
+    text-decoration: none;
+}
+.user:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+}
+
+
+
+.recipe{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #213032;
+}
+.recipe h2{
+    color: #edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.box .card img{
+    width: 100%;
+    height: 1005;
+    object-fit: cover;
+   
+}
+.box .card .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.box .card:hover .content{
+    opacity: 1;
+}
+.card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
+}
+.box .card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .card button{
+    position:relative;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 13px 30px;
+ }
+ .box .card button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+ }
+ /*Categories*/
+ .categories{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #314e52;
+ }
+ .categories h2{
+    color:#edffef;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ .ca-card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+ }
+ .box .ca-card .content{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+ }
+ .box .ca-card:hover .content{
+    opacity: 1;
+ }
+ .ca-card h3{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
+ }
+.box .ca-card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .ca-card button{
+    position:relative;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform:.4s;
+    padding: 13px 30px;
+}
+.box .ca-card button:hover{
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.box .ca-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CSS for footer */
+.footer{
+    padding: 40px;
+    background-color:#82ccdd;
+    font-size: 16px;
+}
+
+.footer .container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+.footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.footer-content .lists{
+    padding: 0;
+}
+.footer-content .lists li{
+    width: auto;
+    text-align: center;
+    list-style-type: none ;
+    padding: 7px;
+    position: relative;
+}
+ .footer-content .lists li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background:#f8c291;
+    transition-duration: .5s;
+}
+.footer-content .list li:hover::before{
+    width: 70px;
+} 
+
+.footer-content li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: #f8c291;
+}
+.social-icons li{
+    list-style-type: none;
+    display: inline;
+    padding:0px 10px;
+}
+.social-icons li i{
+    font-size: 20px;;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bottom-bar{
+   
+    text-align: center;
+    padding: 10px 0px;
+    margin-top: 25px;
+}
+.bottom-bar p{
+    color: black;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.bottom-bar p a{
+    color: black;
+}
+.bottom-bar p a:hover{
+    color: green;
+}

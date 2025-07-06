@@ -1,0 +1,118 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.contain {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.form {
+    padding: 20px;
+}
+
+.display-order {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.display-order span {
+    font-size: 16px;
+    color: #444;
+}
+
+.display-order .garnd-total {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e85a50;
+    font-size: 18px;
+}
+
+/* Input Styling */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inputbo {
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputbo span {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.inputbo input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.inputbo input:focus {
+    border-color: #20b2aa;
+}
+
+/* Submit Button */
+.btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e85a50;
+}
+
+/* Validation Errors */
+.error {
+    font-size: 13px;
+    color: red;
+    margin-top: 3px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .contain {
+        margin: 20px;
+    }
+}
